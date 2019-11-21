@@ -14,6 +14,7 @@ defmodule Gonex.MixProject do
       source_url: "https://github.com/nmbrone/gonex",
       homepage_url: "https://github.com/nmbrone/gonex",
       package: [
+        maintainers: ["Sergey Snozyk"],
         licenses: ["MIT"],
         links: %{"GitHub" => "https://github.com/nmbrone/gonex"}
       ],

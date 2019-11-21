@@ -1,6 +1,7 @@
 # Gonex - get your Phoenix variables in your Javascript
 
-[![Actions Status](https://github.com/nmbrone/gonex/workflows/Elixir/badge.svg?branch=master)](https://github.com/nmbrone/gonex/actions)
+[![Actions Status](https://github.com/nmbrone/gonex/workflows/build/badge.svg?branch=master)](https://github.com/nmbrone/gonex/actions)
+[![Hex version badge](https://img.shields.io/hexpm/v/gonex.svg)](https://hex.pm/packages/gonex)
 
 Gonex is a super simple implementation of [gon](https://github.com/gazay/gon) but for [Phoenix](https://www.phoenixframework.org/) 
 projects and it's a convenient way to send some data from your controller to your JavaScript.
