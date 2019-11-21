@@ -6,7 +6,7 @@ defmodule Gonex do
 
     * `Gonex.Controller` - Functions for working with gon storage within Phoenix Controller.
 
-    * `Gonex.View` - Helpers for rendering gon script in your templates.
+    * `Gonex.View` - Functions for rendering gon script in your templates.
 
   """
 end
