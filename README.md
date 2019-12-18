@@ -46,7 +46,7 @@ defmodule MyAppWeb.PageController do
   use MyAppWeb, :controller
   
   # Import Gonex controller helpers.
-  # Alternatively you can import this in your MyAppsWeb :controller definition 
+  # Alternatively you can import this in your MyAppWeb :controller definition 
   # and make Gonex available within all of your controllers
   import Gonex.Controller
   
@@ -64,11 +64,11 @@ Finally in you JavaScript:
 alert(window.myAppGon.greeting); // "Hello, World!"
 ```
 
-Sometimes you will need to have a basic (or initial) set of variables across all of your pages. 
+Sometimes you will need to have a basic (or initial) set of variables across all of your views. 
 This can be easily achieved with the custom plug:
 
 ```elixir
-defmodule MyAppWeb.Plug.PutGon do
+defmodule MyAppWeb.PutGonPlug do
   def init(opts), do: opts
   
   def call(conn, _opts) do
@@ -88,7 +88,7 @@ defmodule MyAppWeb.Router do
 
   pipeline :browser do
     # ...
-    plug MyAppWeb.Plug.PutGon
+    plug MyAppWeb.PutGonPlug
     # ...
   end
 end
